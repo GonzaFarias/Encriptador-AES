@@ -116,7 +116,10 @@
             font-size: 1.3rem;
             margin-bottom: 30px;
         }
-
+        .container{
+            margin-top: -20px;
+            padding: 13px;
+        } 
         img {
             margin-bottom: 55px;
             position: fixed;
