@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encriptador web</title>
+	<link rel="shortcut icon" href="logo_transparent2.png" type="image/x-icon">
+	<!-- Biblioteca CryptoJS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+		integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="crypto-js.min.js"></script>
+	<script src="encrypt.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<h1>Encriptador web</h1>
+	</header>
+
+	<main class="container fade-in">
+		<section>
+			<h2>Encriptar texto</h2>
+			<div>
+				<div class="input-group">
+					<input type="text" id="texto-a-encriptar" placeholder="Ingresar desencriptado">
+					<button onclick="encriptar()">Encriptar</button>
+				</div>
+			</div>
+			<div>
+				<div class="input-group">
+					<input type="text" id="texto-encriptado" placeholder="Texto encriptado" readonly>
+					<button onclick="copiar('texto-encriptado')">Copiar</button>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Desencriptar texto</h2>
+			<div>
+				<div class="input-group">
+					<input type="text" id="texto-a-desencriptar" placeholder="Ingresar encriptado">
+					<button onclick="desencriptar()">Desencriptar</button>
+				</div>
+			</div>
+			<div>
+				<div class="input-group">
+					<input type="text" id="texto-desencriptado" placeholder="Texto desencriptado" readonly>
+					<button onclick="copiar('texto-desencriptado')">Copiar</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<img src="logo_transparent.png" alt="Icono">
+	<footer>
+		&copy; 2023 Hecho por <a href="https://github.com/GonzaFarias">Gonzalo Farías</a>
+	</footer>
+</body>
+
+</html>
